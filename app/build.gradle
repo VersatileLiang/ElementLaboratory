@@ -25,14 +25,14 @@ android.applicationVariants.all { variant ->
             outputFileName = "元素实验室_V${android.defaultConfig.versionName}_${variant.name}.apk"
             println outputFileName
         }else{
-            outputFileName = "元素实验室_V${android.defaultConfig.versionName}_${getCurrentDate()}_${variant.name}.apk"
+            outputFileName = "元素实验室_V${android.defaultConfig.versionName}_Time${getCurrentDate()}_${variant.name}.apk"
             println outputFileName
         }
     }
 }
 
 def getCurrentDate() {
-    SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-HH-mm")
+    SimpleDateFormat sdf = new SimpleDateFormat("YYMMddHHmm")
     return sdf.format(new Date())
 }
 
