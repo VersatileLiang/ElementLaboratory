@@ -187,7 +187,7 @@ java
 
 ## 赞赏码
 
-觉得有帮助的请支持一下作者哦，**扫码**赞赏。
+觉得有帮助的请支持一下作者哦，**微信扫码**赞赏。
 
 <p>
   <a href="https://i0.hdslb.com/bfs/album/a438775b7d4a04da8793535833d7354c6418a410.png"><img src="https://i0.hdslb.com/bfs/album/8501815eded40a0a05311a0a16f24404923a3bad.png" alt="赞赏码"></a>
@@ -199,8 +199,8 @@ java
 
 <p>
   <a href="https://i0.hdslb.com/bfs/album/90f974d6330c28728f3b28ea8051e3c5db2578db.jpg"><img src="https://i0.hdslb.com/bfs/album/90f974d6330c28728f3b28ea8051e3c5db2578db.jpg" alt="支付宝收款码"></a>
-  <a href="https://i0.hdslb.com/bfs/album/7e9bc9f6109f2a36167390a32a0ca96416ddcd0e.png"><img src="https://i0.hdslb.com/bfs/album/77bd90424283dc0418a3266ea36395cacc07cdca.png" alt="微信收款码"></a>
-  <a href="https://i0.hdslb.com/bfs/album/2554bdfb08df27756d14a43cf54bc4329f547919.png"><img src="https://i0.hdslb.com/bfs/album/3ad0fc8addfe044a0237121c091cc72e97179171.png" alt="QQ钱包收款码"></a>
+  <a href="https://i0.hdslb.com/bfs/album/77bd90424283dc0418a3266ea36395cacc07cdca.png"><img src="https://i0.hdslb.com/bfs/album/7e9bc9f6109f2a36167390a32a0ca96416ddcd0e.png" alt="微信收款码"></a>
+  <a href="https://i0.hdslb.com/bfs/album/3ad0fc8addfe044a0237121c091cc72e97179171.png"><img src="https://i0.hdslb.com/bfs/album/2554bdfb08df27756d14a43cf54bc4329f547919.png" alt="QQ钱包收款码"></a>
 </p>
 
 ## 许可证
