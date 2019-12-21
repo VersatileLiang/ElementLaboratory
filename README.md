@@ -1,13 +1,13 @@
 # 元素实验室
 
 <p>
-  <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
-  <a href="https://github.com/macrozheng/mall-learning"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B-mall--learning-green.svg" alt="学习教程"></a>
-  <a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
-  <a href="https://github.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
-  <a href="http://qm.qq.com/cgi-bin/qm/qr?k=V6xu5c12j9qhnMUNdDRzakNxRKzOxibQ"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/QQ%E7%BE%A4-959351312-red.svg" alt="QQ群"></a>
-  <a href="http://qm.qq.com/cgi-bin/qm/qr?k=M5Edq2TiJL_ShcOEeYjwcmdGmq4zZrd_"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/QQ%E7%BE%A4-553018255-red.svg" alt="QQ群"></a>
-  <a href="https://gitee.com/macrozheng/mall"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E7%A0%81%E4%BA%91-%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80-orange.svg" alt="码云"></a>
+  <a href="#赞赏码"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="赞赏码"></a>
+  <a href="https://baidu.com"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B-mall--learning-green.svg" alt="学习教程"></a>
+  <a href="https://baidu.com"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
+  <a href="https://baidu.com"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
+  <a href="https://baidu.com"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/QQ%E7%BE%A4-959351312-red.svg" alt="QQ群"></a>
+  <a href="https://baidu.com"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/QQ%E7%BE%A4-553018255-red.svg" alt="QQ群"></a>
+  <a href="https://baidu.com"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E7%A0%81%E4%BA%91-%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80-orange.svg" alt="码云"></a>
 </p>
 
 ## 前言
@@ -16,35 +16,35 @@
 
 ## 项目文档
 
-- 文档地址：[http://www.macrozheng.com](http://www.macrozheng.com)
-- 备用地址：[https://macrozheng.github.io/mall-learning](https://macrozheng.github.io/mall-learning)
+- 文档地址：[https://baidu.com](https://baidu.com)
+- 备用地址：[https://baidu.com](https://baidu.com)
 
 ## 项目介绍
 
-`mall`项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。
+`元素实验室`项目是一套化学实验系统，包括前台系统及后台管理系统，基于SpringBoot+MyBatis实现。前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。
 
 ### 项目演示
 
 #### 后台管理系统
 
-前端项目`mall-admin-web`地址：https://github.com/macrozheng/mall-admin-web
+前端项目`admin-web`地址：https://baidu.com
 
-项目演示地址： [http://www.macrozheng.com/admin/index.html](http://www.macrozheng.com/admin/index.html)
+项目演示地址： [https://baidu.com](https://baidu.com)
 
 ![后台管理系统功能演示.gif](/document/resource/mall-admin.gif)
 
-#### 前台商城系统
+#### 前台系统
 
-前端项目`mall-app-web`地址：敬请期待......
+前端项目`app-web`地址：敬请期待......
 
-项目演示地址：[http://www.macrozheng.com/app/index.html](http://www.macrozheng.com/app/index.html)
+项目演示地址：[https://baidu.com](https://baidu.com)
 
-![前台商城系统功能演示.gif](/document/resource/mall-app.gif)
+![前台系统功能演示.gif](/document/resource/mall-app.gif)
 
 ### 组织结构
 
-``` lua
-mall
+``` el
+java
 ├── mall-common -- 工具类及通用代码
 ├── mall-mbg -- MyBatisGenerator生成的数据库操作代码
 ├── mall-security -- SpringSecurity封装公用模块
@@ -185,14 +185,22 @@ mall
 - [Kubernetes权威指南](https://book.douban.com/subject/26902153/)
 - [Pro Git](https://git-scm.com/book/zh/v2)
 
-## 公众号
+## 赞赏码
 
-mall项目全套学习教程连载中，**关注公众号**第一时间获取。
+觉得有帮助的请支持一下作者哦，**扫码**赞赏。
 
-![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
+![赞赏码图片](https://i0.hdslb.com/bfs/album/a438775b7d4a04da8793535833d7354c6418a410.png)
+
+## 收款码
+
+以下方式也可赞赏。
+
+![收款码图片](https://i0.hdslb.com/bfs/album/486800d12f5aa97834290789087ea946723ea39c.jpg)
+![收款码图片](https://i0.hdslb.com/bfs/album/77bd90424283dc0418a3266ea36395cacc07cdca.png)
+![收款码图片](https://i0.hdslb.com/bfs/album/3ad0fc8addfe044a0237121c091cc72e97179171.png)
 
 ## 许可证
 
-[Apache License 2.0](https://github.com/macrozheng/mall/blob/master/LICENSE)
+[Apache License 2.0](https://github.com/)
 
-Copyright (c) 2018-2019 macrozheng
+Copyright (c) 2018-2019 lks
