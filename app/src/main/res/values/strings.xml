@@ -1,4 +1,23 @@
 <resources>
+    <!-- 主界面 -->
     <string name="app_name">元素实验室</string>
     <string name="my_word">我的实验室</string>
+
+    <!-- 右上角 -->
+    <string name="action_search">搜索</string>
+    <string name="action_settings">设置</string>
+
+    <!-- 左侧 -->
+    <string name="menu_home">我的</string>
+    <string name="menu_gallery">登录</string>
+    <string name="menu_slideshow">注册</string>
+    <string name="menu_tools">工具</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_send">发送</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">用户名</string>
+    <string name="nav_header_subtitle">用户签名，个性签名介绍自己</string>
+    <string name="nav_header_desc">Navigation header</string>
 </resources>
