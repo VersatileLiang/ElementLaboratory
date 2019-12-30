@@ -27,7 +27,7 @@ public class SlideshowFragment extends Fragment {
         slideshowViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                textView.setText(R.string.menu_slideshow);
             }
         });
         return root;

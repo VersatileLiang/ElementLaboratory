@@ -27,7 +27,7 @@ public class GalleryFragment extends Fragment {
         galleryViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                textView.setText(R.string.menu_gallery);
             }
         });
         return root;

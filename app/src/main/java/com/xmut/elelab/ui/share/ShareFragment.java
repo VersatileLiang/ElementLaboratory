@@ -27,7 +27,7 @@ public class ShareFragment extends Fragment {
         shareViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                textView.setText(R.string.menu_share);
             }
         });
         return root;
