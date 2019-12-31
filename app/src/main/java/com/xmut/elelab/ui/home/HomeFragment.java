@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -12,11 +13,13 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.bumptech.glide.Glide;
 import com.xmut.elelab.R;
 
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
+    private ImageView netImg;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -30,6 +33,8 @@ public class HomeFragment extends Fragment {
                 textView.setText(R.string.menu_home);
             }
         });
+        netImg = root.findViewById(R.id.home_img);
+        Glide.with(this.getActivity()).load("https://i0.hdslb.com/bfs/album/90f974d6330c28728f3b28ea8051e3c5db2578db.jpg").into(netImg);
         return root;
     }
 }

@@ -2,6 +2,7 @@ package com.xmut.elelab;
 
 import android.os.Bundle;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -20,10 +21,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    private ImageView headImg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
         // 膨胀菜单；
         // 这会将项目添加到操作栏（如果有）。
         getMenuInflater().inflate(R.menu.main, menu);
+        headImg = this.findViewById(R.id.imageView);
+        Glide.with(this).load("http://img3.imgtn.bdimg.com/it/u=3296462801,3039199844&fm=26&gp=0.jpg").into(headImg);
         return true;
     }
 
