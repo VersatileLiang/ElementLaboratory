@@ -13,6 +13,7 @@ import java.net.URLConnection;
 
 /**
  * 图片处理工具类
+ * @author kaisong liang
  */
 public class ImageUtils {
     private int picType;//0表示默认png图片；1表示jpg或者jpeg

@@ -3,11 +3,16 @@
     <string name="app_name">元素实验室</string>
     <string name="my_word">我的实验室</string>
 
+    <!-- 底部导航栏-->
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">知识</string>
+    <string name="title_notifications">记录</string>
+
     <!-- 右上角 -->
     <string name="action_search">搜索</string>
     <string name="action_settings">设置</string>
 
-    <!-- 左侧 -->
+    <!-- 左侧抽屉菜单栏 -->
     <string name="menu_home">我的</string>
     <string name="menu_gallery">登录</string>
     <string name="menu_slideshow">注册</string>
@@ -21,4 +26,7 @@
     <string name="nav_header_title">用户名</string>
     <string name="nav_header_subtitle">用户签名，个性签名介绍自己</string>
     <string name="nav_header_desc">Navigation header</string>
+    
+    <!-- 首页fragment -->
+    <string name="rotation_chart">轮播图</string>
 </resources>

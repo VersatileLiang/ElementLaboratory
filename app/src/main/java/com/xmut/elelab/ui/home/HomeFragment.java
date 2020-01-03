@@ -30,11 +30,13 @@ public class HomeFragment extends Fragment {
         homeViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(R.string.menu_home);
+                textView.setText(s);
             }
         });
         netImg = root.findViewById(R.id.home_img);
-        Glide.with(this.getActivity()).load("https://i0.hdslb.com/bfs/album/90f974d6330c28728f3b28ea8051e3c5db2578db.jpg").into(netImg);
+        Glide.with(this.getActivity())
+                .load("https://i0.hdslb.com/bfs/album/90f974d6330c28728f3b28ea8051e3c5db2578db.jpg")
+                .into(netImg);
         return root;
     }
 }
