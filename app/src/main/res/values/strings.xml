@@ -26,7 +26,11 @@
     <string name="nav_header_title">用户名</string>
     <string name="nav_header_subtitle">用户签名，个性签名介绍自己</string>
     <string name="nav_header_desc">Navigation header</string>
-    
+
     <!-- 首页fragment -->
     <string name="rotation_chart">轮播图</string>
+    <string name="my_lab">我的实验</string>
+
+    <!-- 选择实验 -->
+    <string name="selection_experiment">选择实验</string>
 </resources>

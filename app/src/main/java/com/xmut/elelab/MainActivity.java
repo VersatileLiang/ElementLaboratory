@@ -27,6 +27,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout leftHeadLinear;//左侧上方
     private ImageView headImg;//左侧头像
     private Drawable btnDrawable; //左侧背景图片
-    private RequestBuilder<Drawable> drawableRequestBuilder;
+    private RequestBuilder<Drawable> drawableRequestBuilder; //头像图片缓存
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,4 +113,6 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
 }
