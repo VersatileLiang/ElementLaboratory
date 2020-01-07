@@ -7,11 +7,11 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class RecordViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public RecordViewModel() {
         mText = new MutableLiveData<>();
         String name = AppContext.getContext().getString(R.string.title_notifications);
         mText.setValue(name);
