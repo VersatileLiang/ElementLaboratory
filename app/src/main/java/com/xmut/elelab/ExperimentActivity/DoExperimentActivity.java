@@ -1,13 +1,14 @@
 package com.xmut.elelab.ExperimentActivity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.xmut.elelab.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 做实验的界面
@@ -21,6 +22,14 @@ public class DoExperimentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_do_experiment);
 //        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);//横屏
+        Button button = findViewById(R.id.start_element);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(DoExperimentActivity.this,"开始做实验!!！",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

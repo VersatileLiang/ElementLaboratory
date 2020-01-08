@@ -8,8 +8,8 @@ android {
         applicationId "com.xmut.elelab"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 6
-        versionName "0.2.1"
+        versionCode 7
+        versionName "0.2.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -32,7 +32,7 @@ android.applicationVariants.all { variant ->
     }
 }
 
-def getCurrentDate() {//获取date
+static def getCurrentDate() {//获取date
     SimpleDateFormat sdf = new SimpleDateFormat("YYYYMMddHHmm")
     return sdf.format(new Date())
 }
@@ -56,5 +56,9 @@ dependencies {
 //    implementation 'com.github.bumptech.glide:glide:4.9.0'
 //    kapt 'com.github.bumptech.glide:compiler:4.9.0'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //集成：1.2、配置IM SDK（bmob-im）版本和Data SDK（bmob-sdk）版本：特定版本的bmob-im依赖特定版本的bmob-sdk
+    implementation 'cn.bmob.android:bmob-im:2.1.4@aar'
+    implementation 'cn.bmob.android:bmob-sdk:3.7.3'
 }
