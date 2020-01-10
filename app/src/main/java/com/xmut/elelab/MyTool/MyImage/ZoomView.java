@@ -77,7 +77,7 @@ public class ZoomView extends RelativeLayout {
                     translationY = translationY + event.getRawY() - actionY;
                     setTranslationX(translationX);
                     setTranslationY(translationY);
-                    Log.e(TAG, "onTouchEvent: "+translationX +"."+translationY);
+//                    Log.e(TAG, "onTouchEvent: "+translationX +"."+translationY);
                     actionX = event.getRawX();
                     actionY = event.getRawY();
                 } else if (moveType == 2) {

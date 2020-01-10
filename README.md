@@ -215,9 +215,3 @@ java
   </a>
   <br>
 </p>
-
-## 许可证
-
-[Apache License 2.0](https://github.com/)
-
-Copyright (c) 2018-2019 lks
