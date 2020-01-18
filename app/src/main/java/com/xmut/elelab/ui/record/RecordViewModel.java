@@ -1,4 +1,4 @@
-package com.xmut.elelab.ui.notifications;
+package com.xmut.elelab.ui.record;
 
 import com.xmut.elelab.MyTool.AppContext.AppContext;
 import com.xmut.elelab.R;

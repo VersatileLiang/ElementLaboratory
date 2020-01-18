@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.xmut.elelab.ui.dashboard.KnowledgeFragment"
+        android:name="com.xmut.elelab.ui.knowledge.KnowledgeFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_knowledge" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.xmut.elelab.ui.notifications.RecordFragment"
+        android:name="com.xmut.elelab.ui.record.RecordFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_record" />
 </navigation>

@@ -18,6 +18,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 android.applicationVariants.all { variant ->
@@ -45,12 +49,14 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.1.0'
     implementation 'androidx.navigation:navigation-ui:2.1.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //腾讯AndroidUI框架QMUI
     implementation 'com.qmuiteam:qmui:2.0.0-alpha02'
+    implementation "com.qmuiteam:arch:2.0.0-alpha02"
 
 //    谷歌的加载网络图片框架
 //    implementation 'com.github.bumptech.glide:glide:4.9.0'
@@ -59,6 +65,15 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 
     //集成：1.2、配置IM SDK（bmob-im）版本和Data SDK（bmob-sdk）版本：特定版本的bmob-im依赖特定版本的bmob-sdk
-    implementation 'cn.bmob.android:bmob-im:2.1.4@aar'
-    implementation 'cn.bmob.android:bmob-sdk:3.7.3'
+//    implementation 'cn.bmob.android:bmob-im:2.1.4@aar'
+//    implementation 'cn.bmob.android:bmob-sdk:3.7.3'
+
+    //
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    //leak
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 }

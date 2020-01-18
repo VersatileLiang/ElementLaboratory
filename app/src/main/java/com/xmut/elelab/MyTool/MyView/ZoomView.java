@@ -1,4 +1,4 @@
-package com.xmut.elelab.MyTool.MyImage;
+package com.xmut.elelab.MyTool.MyView;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -20,7 +20,7 @@ public class ZoomView extends RelativeLayout {
     // 属性变量
     private float translationX; // 移动X
     private float translationY; // 移动Y
-    private float scale = 1; // 伸缩比例
+    public static float scale = 1; // 伸缩比例
     private float rotation; // 旋转角度
     private int widthZoom; //界面宽度
     private int heightZoom; //界面高度

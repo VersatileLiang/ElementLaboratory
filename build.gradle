@@ -8,7 +8,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
-        
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.1.0'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -19,7 +19,7 @@ allprojects {
         google()
         jcenter()
         //集成：1.1、配置Bmob的maven仓库地址
-        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+//        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
         
     }
 }

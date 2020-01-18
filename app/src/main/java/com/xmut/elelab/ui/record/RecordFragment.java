@@ -1,4 +1,4 @@
-package com.xmut.elelab.ui.notifications;
+package com.xmut.elelab.ui.record;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

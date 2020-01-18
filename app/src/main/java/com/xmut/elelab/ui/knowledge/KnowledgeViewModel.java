@@ -1,4 +1,4 @@
-package com.xmut.elelab.ui.dashboard;
+package com.xmut.elelab.ui.knowledge;
 
 import com.xmut.elelab.MyTool.AppContext.AppContext;
 import com.xmut.elelab.R;
