@@ -8,16 +8,6 @@
     tools:context=".ExperimentActivity.ui.DoExperimentFragment"
     android:background="@drawable/side_nav_bar">
 
-
-    <com.qmuiteam.qmui.widget.QMUITopBarLayout
-        android:id="@+id/topbar1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.xmut.elelab.MyTool.MyView.ZoomView
         android:id="@+id/zoomView"
         android:layout_width="match_parent"
@@ -27,15 +17,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:id="@+id/start_element"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="开始实验">
-            </Button>
+            android:layout_height="match_parent"
+            android:gravity="center">
             <com.xmut.elelab.MyTool.MyView.MyBR
                 android:id="@+id/start_element_move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/test_tube">
+            </com.xmut.elelab.MyTool.MyView.MyBR>
+            <com.xmut.elelab.MyTool.MyView.MyBR
+                android:id="@+id/movable_experimental_equipment_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/test_tube">
@@ -46,16 +37,11 @@
                 android:layout_height="wrap_content"
                 android:background="@mipmap/beaker">
             </com.xmut.elelab.MyTool.MyView.MyBR>
-            <com.xmut.elelab.MyTool.MyView.MyBR
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/test_tube">
-            </com.xmut.elelab.MyTool.MyView.MyBR>
         </LinearLayout>
-
     </com.xmut.elelab.MyTool.MyView.ZoomView>
 
     <LinearLayout
+        android:id="@+id/linear_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
