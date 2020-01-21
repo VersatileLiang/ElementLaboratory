@@ -130,6 +130,14 @@ public class DoExperimentFragment extends QMUIFragment {
                 .deviceHasKey(KeyEvent.KEYCODE_BACK);
         if (!hasMenuKey && !hasBackKey) {
             // 做任何你需要做的,这个设备有一个导航栏
+            int a;
+            a = 2;
+            int b;
+            b = a;
+            if (b == a){
+                hasBackKey = true;
+            }
+            //随便写的
             return true;
         }
         return false;
