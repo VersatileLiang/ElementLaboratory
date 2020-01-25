@@ -9,12 +9,12 @@ import android.widget.RelativeLayout;
 
 /**
  * IDEA 2019.1.3
- *
+ * 可以拖动的按钮
  * @author kaisong liang
  * @version 1.0
  * @date 2020/1/11 0:17
  */
-public class MyBR extends RelativeLayout {
+public class MyRelativeButton extends RelativeLayout {
     // 属性变量
     private int parentHeight;//悬浮的父布局高度
     private int parentWidth;
@@ -24,15 +24,15 @@ public class MyBR extends RelativeLayout {
 
     private boolean isDrag;
 
-    public MyBR(Context context) {
+    public MyRelativeButton(Context context) {
         this(context, null);
     }
 
-    public MyBR(Context context, AttributeSet attrs) {
+    public MyRelativeButton(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public MyBR(Context context, AttributeSet attrs, int defStyleAttr) {
+    public MyRelativeButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setClickable(true);
     }

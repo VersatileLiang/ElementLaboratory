@@ -19,24 +19,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center">
-            <com.xmut.elelab.MyTool.MyView.MyBR
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
                 android:id="@+id/start_element_move"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/test_tube">
-            </com.xmut.elelab.MyTool.MyView.MyBR>
-            <com.xmut.elelab.MyTool.MyView.MyBR
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
                 android:id="@+id/movable_experimental_equipment_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/test_tube">
-            </com.xmut.elelab.MyTool.MyView.MyBR>
-            <com.xmut.elelab.MyTool.MyView.MyBR
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
                 android:id="@+id/beaker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/beaker">
-            </com.xmut.elelab.MyTool.MyView.MyBR>
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
         </LinearLayout>
     </com.xmut.elelab.MyTool.MyView.ZoomView>
 
