@@ -32,7 +32,7 @@ public class HomeFragment extends Fragment {
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         final View root = inflater.inflate(R.layout.fragment_home, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
-        homeViewModel.getText().observe(this, new Observer<String>() {
+        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
         });
         netImg = root.findViewById(R.id.home_img);
         Glide.with(root)
-                .load("https://i0.hdslb.com/bfs/album/90f974d6330c28728f3b28ea8051e3c5db2578db.jpg")
+                .load("http://liangkaisong.top/i/1/qj8860735275.jpg")
                 .into(netImg);
 
         experimentButton = root.findViewById(R.id.experiment_button);

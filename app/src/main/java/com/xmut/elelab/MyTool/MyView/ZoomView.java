@@ -18,20 +18,20 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
  */
 public class ZoomView extends RelativeLayout {
     // 属性变量
-    private float translationX; // 移动X
-    private float translationY; // 移动Y
+    protected float translationX; // 移动X
+    protected float translationY; // 移动Y
     public static float scale = 1; // 伸缩比例
-    private float rotation; // 旋转角度
-    private int widthZoom; //界面宽度
-    private int heightZoom; //界面高度
-    private int sign = 0; //标记这个宽高是不是第一次赋值
+    protected float rotation; // 旋转角度
+    protected int widthZoom; //界面宽度
+    protected int heightZoom; //界面高度
+    protected int sign = 0; //标记这个宽高是不是第一次赋值
 
     // 移动过程中临时变量
-    private float actionX;
-    private float actionY;
-    private float spacing;
-    private float degree;
-    private int moveType; // 0=未选择，1=拖动，2=缩放
+    protected float actionX;
+    protected float actionY;
+    protected float spacing;
+    protected float degree;
+    protected int moveType; // 0=未选择，1=拖动，2=缩放
 
     public ZoomView(Context context) {
         this(context, null);

@@ -18,24 +18,107 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center">
-            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
+            android:orientation="horizontal"
+            android:gravity="bottom">
+            <com.xmut.elelab.MyTool.MyView.MyOvButton
                 android:id="@+id/start_element_move"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@mipmap/test_tube">
-            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+                android:gravity="center"
+                android:background="@mipmap/test_tube"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyOvButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
             <com.xmut.elelab.MyTool.MyView.MyRelativeButton
                 android:id="@+id/movable_experimental_equipment_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@mipmap/test_tube">
+                android:gravity="center"
+                android:background="@mipmap/beaker"
+                android:dither="true">
             </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
             <com.xmut.elelab.MyTool.MyView.MyRelativeButton
                 android:id="@+id/beaker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@mipmap/beaker">
+                android:gravity="center"
+                android:background="@mipmap/beaker"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/beaker"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/beaker"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/beaker"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/beaker"
+                android:dither="true">
             </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
         </LinearLayout>
     </com.xmut.elelab.MyTool.MyView.ZoomView>
@@ -54,7 +137,7 @@
                 android:layout_weight="1"
                 android:textSize="20dp"
                 android:textColor="@color/text_black"
-                android:shadowColor="#CA7510"
+                android:shadowColor="@color/text_bg"
                 android:shadowRadius="1"
                 android:shadowDx="1"
                 android:shadowDy="1"
@@ -66,7 +149,7 @@
                 android:layout_weight="1"
                 android:textSize="20dp"
                 android:textColor="@color/text_black"
-                android:shadowColor="#CA7510"
+                android:shadowColor="@color/text_bg"
                 android:shadowRadius="1"
                 android:shadowDx="1"
                 android:shadowDy="1"
@@ -78,7 +161,7 @@
                 android:layout_gravity="right"
                 android:textSize="20dp"
                 android:textColor="@color/text_black"
-                android:shadowColor="#CA7510"
+                android:shadowColor="@color/text_bg"
                 android:shadowRadius="1"
                 android:shadowDx="1"
                 android:shadowDy="1"
@@ -101,6 +184,25 @@
                 android:layout_height="50dp"
                 android:background="@drawable/yaoji">
             </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginBottom="0dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

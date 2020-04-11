@@ -5,7 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="mainColor">#2e53e6</color>
     <color name="mainDarkColor">#e00f2374</color>
-    <color name="text_black">#053A0B</color>
+    <color name="text_black">#082F3E</color>
+    <color name="text_bg">#CA7510</color>
 
     <!-- common -->
     <color name="app_color_blue">#00A8E1</color>

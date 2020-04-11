@@ -16,13 +16,19 @@ import android.widget.RelativeLayout;
  */
 public class MyRelativeButton extends RelativeLayout {
     // 属性变量
-    private int parentHeight;//悬浮的父布局高度
-    private int parentWidth;
+    protected int parentHeight;//悬浮的父布局高度
+    protected int parentWidth;
 
-    private int lastX;
-    private int lastY;
+    protected int lastX;
+    protected int lastY;
 
-    private boolean isDrag;
+    protected boolean isDrag;
+
+    protected int widthZoom; //界面宽度
+    protected int heightZoom; //界面高度
+    protected int sign = 0; //标记这个宽高是不是第一次赋值
+
+    protected long time;
 
     public MyRelativeButton(Context context) {
         this(context, null);
@@ -46,6 +52,11 @@ public class MyRelativeButton extends RelativeLayout {
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        if (sign == 0){
+            widthZoom = getMeasuredWidth();
+            heightZoom = getMeasuredHeight();
+            sign = 1;
+        }
         int rawX = (int) event.getRawX();
         int rawY = (int) event.getRawY();
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
@@ -58,7 +69,7 @@ public class MyRelativeButton extends RelativeLayout {
                 ViewGroup parent;
                 if(getParent()!=null){
                     parent= (ViewGroup) getParent();
-                    parentHeight=parent.getHeight();
+                    parentHeight=parent.getHeight(); //获取父布局高度
                     parentWidth=parent.getWidth();
                 }
                 break;
@@ -84,9 +95,14 @@ public class MyRelativeButton extends RelativeLayout {
                 setY(y);
                 lastX=rawX;
                 lastY=rawY;
+                time = System.currentTimeMillis();
                 break;
             case MotionEvent.ACTION_UP:
-                setPressed(!isDrag);
+                if (System.currentTimeMillis() - time < 200){
+                    setPressed(false);
+                }else {
+                    setPressed(!isDrag);
+                }
                 break;
             case MotionEvent.ACTION_POINTER_UP:
 //                moveType = 0;

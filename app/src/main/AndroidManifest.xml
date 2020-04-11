@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.xmut.elelab">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/ElementLaboratory">
         <activity android:name=".ExperimentActivity.DoExperimentActivity"
-            android:screenOrientation="landscape"><!-- 做实验的activity，横屏 -->
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"><!-- 做实验的activity，横屏 -->
         </activity>
         <activity android:name=".ExperimentActivity.ExperimentActivity" />
         <activity
