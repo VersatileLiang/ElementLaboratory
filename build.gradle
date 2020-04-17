@@ -20,7 +20,9 @@ allprojects {
         jcenter()
         //集成：1.1、配置Bmob的maven仓库地址
 //        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
-        
+
+        //导航栏半透明
+        maven { url 'https://jitpack.io' }
     }
 }
 

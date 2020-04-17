@@ -17,23 +17,32 @@
 package com.xmut.elelab.MyTool.base;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
 
+import com.cy.translucentparent.StatusNavUtils;
 import com.qmuiteam.qmui.arch.QMUIActivity;
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import static com.xmut.elelab.MyTool.AppContext.AppContext.getContext;
 
 @SuppressLint("Registered")
-public class BaseActivity extends QMUIActivity {
+public class BaseActivity extends AppCompatActivity {
 
     @Override
-    protected int backViewInitOffset() {
-        return QMUIDisplayHelper.dp2px(getContext(), 100);
-    }
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
+//        StatusNavUtils.setStatusBarColor(this,0x00000000); //状态栏全透明
+        StatusNavUtils.setStatusBarColor(this,0x33000000); //状态栏半透明
 
+//        StatusNavUtils.setNavigationBarColor(this,0x00000000); //导航栏全透明
+        StatusNavUtils.setNavigationBarColor(this,0x33000000); //导航栏半透明
+    }
+    public void startAppcompatActivity(Class<?> cls) {
+        startActivity(new Intent(this, cls));
+    }
 }

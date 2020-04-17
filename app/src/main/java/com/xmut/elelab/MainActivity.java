@@ -10,6 +10,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 import com.bumptech.glide.request.RequestOptions;
+import com.cy.translucentparent.StatusNavUtils;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -23,6 +24,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 import com.xmut.elelab.MyTool.MyImage.ImageUtils;
+import com.xmut.elelab.MyTool.base.BaseActivity;
 import com.xmut.elelab.ui.knowledge.BackHandledFragment;
 import com.xmut.elelab.ui.knowledge.BackHandledInterface;
 
@@ -41,7 +43,7 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity implements BackHandledInterface {
+public class MainActivity extends BaseActivity implements BackHandledInterface {
 
     private AppBarConfiguration mAppBarConfiguration;//主界面fragment配置
     private LinearLayout leftHeadLinear;//左侧上方
@@ -56,6 +58,10 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //NavigationBar半透明
+        StatusNavUtils.setNavigationBarColor(this,0x33000000);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -161,11 +167,12 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
             View decorView = getWindow().getDecorView();
             decorView.setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-//                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION //隐藏导航栏布局，导航栏依然显示
 //                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-//                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+//                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION //隐藏导航栏和布局
 //                            | View.SYSTEM_UI_FLAG_FULLSCREEN
-                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+            );
         }
     }
 

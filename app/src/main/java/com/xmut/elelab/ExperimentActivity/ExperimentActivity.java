@@ -10,12 +10,13 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.xmut.elelab.MyTool.AppContext.AppContext;
+import com.xmut.elelab.MyTool.base.BaseActivity;
 import com.xmut.elelab.R;
 
 /**
  * 显示实验列表的界面
  */
-public class ExperimentActivity extends AppCompatActivity {
+public class ExperimentActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
