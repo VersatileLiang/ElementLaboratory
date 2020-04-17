@@ -12,6 +12,7 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 /**
  * IDEA 2019.1.3
  * 界面单指拖动双指缩放类
+ * 用于做实验的界面
  * @author kaisong liang
  * @version 1.0
  * @date 2020/1/7 15:57

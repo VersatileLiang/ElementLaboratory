@@ -32,7 +32,6 @@ public class MyOvButton extends MyRelativeButton {
         super(context, attrs, defStyleAttr);
     }
 
-
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         getParent().requestDisallowInterceptTouchEvent(true);

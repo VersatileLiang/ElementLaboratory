@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 /**
  * IDEA 2019.1.3
  * 可以拖动的按钮
+ * 用于单纯的放置交互类型器材，如铁架台等
  * @author kaisong liang
  * @version 1.0
  * @date 2020/1/11 0:17

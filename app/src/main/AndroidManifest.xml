@@ -4,7 +4,6 @@
     package="com.xmut.elelab">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
@@ -14,10 +13,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/ElementLaboratory">
-        <activity android:name=".ExperimentActivity.DoExperimentActivity"
+        <activity
+            android:name=".ExperimentActivity.DoExperimentActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="landscape"
-            tools:ignore="LockedOrientationActivity"><!-- 做实验的activity，横屏 -->
+            tools:ignore="LockedOrientationActivity"> <!-- 做实验的activity，横屏 -->
         </activity>
         <activity android:name=".ExperimentActivity.ExperimentActivity" />
         <activity

@@ -21,11 +21,12 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="130dp">
+            android:layout_height="250dp">
 
             <ImageView
                 android:id="@+id/home_img"
