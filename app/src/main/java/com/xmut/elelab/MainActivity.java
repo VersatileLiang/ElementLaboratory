@@ -17,12 +17,14 @@ import com.google.android.material.snackbar.Snackbar;
 
 import android.view.View;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
+import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
 import com.xmut.elelab.MyTool.MyImage.ImageUtils;
 import com.xmut.elelab.MyTool.base.BaseActivity;
 import com.xmut.elelab.ui.knowledge.BackHandledFragment;
@@ -43,6 +45,8 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
+import static com.xmut.elelab.MyTool.base.BaseFragmentActivity.getNavigationBarFinalHeight;
+
 public class MainActivity extends BaseActivity implements BackHandledInterface {
 
     private AppBarConfiguration mAppBarConfiguration;//主界面fragment配置
@@ -58,7 +62,6 @@ public class MainActivity extends BaseActivity implements BackHandledInterface {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         //NavigationBar半透明
         StatusNavUtils.setNavigationBarColor(this,0x33000000);
 
@@ -173,6 +176,12 @@ public class MainActivity extends BaseActivity implements BackHandledInterface {
 //                            | View.SYSTEM_UI_FLAG_FULLSCREEN
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
             );
+            int height;
+            height = getNavigationBarFinalHeight();
+//            height /= 2;
+            BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_view);
+            ConstraintLayout.LayoutParams b = (ConstraintLayout.LayoutParams) bottomNavigationView.getLayoutParams();
+            b.setMargins(0,0,0,height);
         }
     }
 

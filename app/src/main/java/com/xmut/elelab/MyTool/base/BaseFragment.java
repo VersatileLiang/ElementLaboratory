@@ -21,8 +21,11 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.qmuiteam.qmui.arch.QMUIFragment;
+import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
 import com.qmuiteam.qmui.arch.SwipeBackLayout;
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
+
+import java.util.Objects;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -41,6 +44,10 @@ public abstract class BaseFragment extends QMUIFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        // 在 Application 里初始化
+        // 然后就可以使用 arch 库提供的 QMUIFragment 来作为基础类构建自己的界面了。
+        QMUISwipeBackActivityManager.init(Objects.requireNonNull(getActivity()).getApplication());
     }
 
 

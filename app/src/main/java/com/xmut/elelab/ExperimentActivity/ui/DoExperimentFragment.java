@@ -71,12 +71,14 @@ public class DoExperimentFragment extends QMUIFragment {
 //                        SystemUtil.getSystemSDK()>=19){
 //                    LinearLayout linearLayout = root.findViewById(R.id.linear_main);
 //                    RelativeLayout relativeLayout = root.findViewById(R.id.zoomView);
+//                    ConstraintLayout constraintLayout = root.findViewById(R.id.do_experiment_fragment);
 //                    //measure方法的参数值都设为0即可
 //                    linearLayout.measure(0,0);
+//                    constraintLayout.measure(0,0);
 //                    //获取组件宽度
-//                    int width = linearLayout.getWidth();
+//                    int width = constraintLayout.getWidth();
 //                    //获取组件高度
-//                    int height = linearLayout.getHeight();
+//                    int height = constraintLayout.getHeight();
 //                    //重新设置宽度高度
 ////                    Log.e(getTag(), "onWindowFocusChanged: " + getNavigationBarHeight());
 //                    linearLayout.setLayoutParams(
@@ -86,11 +88,17 @@ public class DoExperimentFragment extends QMUIFragment {
 //                    );
 ////                    relativeLayout.getWidth();
 ////                    relativeLayout.getHeight();
-//                    relativeLayout.setLayoutParams(new ConstraintLayout.LayoutParams(
-//                            (width + getNavigationBarHeight()), height
-//                    ));
+////                    relativeLayout.setLayoutParams(new ConstraintLayout.LayoutParams(
+////                            (width + getNavigationBarHeight()), height
+////                    ));
+//                    constraintLayout.setLayoutParams(
+//                            new ConstraintLayout.LayoutParams(
+//                                    (width + getNavigationBarHeight()), height
+//                            )
+//                    );
 //                    linearLayout.invalidate();
 //                    relativeLayout.invalidate();
+//                    constraintLayout.invalidate();
 ////                    linearLayout.releasePointerCapture();
 ////                    linearLayout.setTranslationX(width + getNavigationBarHeight());
 ////                    linearLayout.setTranslationY(height);
@@ -135,82 +143,5 @@ public class DoExperimentFragment extends QMUIFragment {
                         }
                 ))
                 .show(v);
-    }
-
-    //获取是否存在NavigationBar
-    public static boolean checkDeviceHasNavigationBar(Context context) {
-        //通过判断设备是否有返回键、菜单键(不是虚拟键,是手机屏幕外的按键)来确定是否有navigation bar
-        boolean hasMenuKey = ViewConfiguration.get(context)
-                .hasPermanentMenuKey();
-        boolean hasBackKey = KeyCharacterMap
-                .deviceHasKey(KeyEvent.KEYCODE_BACK);
-        if (!hasMenuKey && !hasBackKey) {
-            // 做任何你需要做的,这个设备有一个导航栏
-            int a;
-            a = 2;
-            int b;
-            b = a;
-            if (b == a){
-                hasBackKey = true;
-            }
-            //随便写的
-            return true;
-        }
-        return false;
-    }
-
-    //获取是否存在NavigationBar
-    public static boolean checkHuaWeiDeviceHasNavigationBar(Context context) {
-        boolean hasNavigationBar = false;
-        try {
-            Resources rs = context.getResources();
-            int id = rs.getIdentifier("config_showNavigationBar", "bool", "android");
-            if (id > 0) {
-                hasNavigationBar = rs.getBoolean(id);
-            }
-            Class systemPropertiesClass = Class.forName("android.os.SystemProperties");
-            Method m = systemPropertiesClass.getMethod("get", String.class);
-            String navBarOverride = (String) m.invoke(systemPropertiesClass, "qemu.hw.mainkeys");
-            if ("1".equals(navBarOverride)) {
-                hasNavigationBar = false;
-            } else if ("0".equals(navBarOverride)) {
-                hasNavigationBar = true;
-            }
-        } catch (Exception e) {
-
-        }
-        return hasNavigationBar;
-    }
-
-    //NavigationBar状态是否是显示
-    public boolean isNavigationBarShow() {
-        Context context = AppContext.getContext();
-        Activity mContext = (Activity) context;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-            Display display = mContext.getWindowManager().getDefaultDisplay();
-            Point size = new Point();
-            Point realSize = new Point();
-            display.getSize(size);
-            display.getRealSize(realSize);
-            return realSize.y != size.y;
-        } else {
-            boolean menu = ViewConfiguration.get(context).hasPermanentMenuKey();
-            boolean back = KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_BACK);
-            if (menu || back) {
-                return false;
-            } else {
-                return true;
-            }
-        }
-    }
-
-    //获取NavigationBar高度
-    public static int getNavigationBarHeight() {
-        Context context = AppContext.getContext();
-        Resources resources = context.getResources();
-        int resourceId = resources.getIdentifier("navigation_bar_height", "dimen", "android");
-        int height = resources.getDimensionPixelSize(resourceId);
-//        Log.e("dbw", "Navi height:" + height);
-        return height;
     }
 }

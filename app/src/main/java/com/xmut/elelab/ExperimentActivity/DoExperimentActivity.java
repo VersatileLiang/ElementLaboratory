@@ -12,6 +12,7 @@ import com.qmuiteam.qmui.arch.annotation.DefaultFirstFragment;
 import com.qmuiteam.qmui.arch.annotation.FirstFragments;
 import com.qmuiteam.qmui.arch.annotation.LatestVisitRecord;
 import com.xmut.elelab.ExperimentActivity.ui.DoExperimentFragment;
+import com.xmut.elelab.MyTool.base.BaseFragmentActivity;
 import com.xmut.elelab.R;
 
 /**
@@ -25,7 +26,7 @@ import com.xmut.elelab.R;
         })
 @DefaultFirstFragment(DoExperimentFragment.class)
 @LatestVisitRecord
-public class DoExperimentActivity extends QMUIFragmentActivity {
+public class DoExperimentActivity extends BaseFragmentActivity {
 
     @Override
     protected int getContextViewId() {

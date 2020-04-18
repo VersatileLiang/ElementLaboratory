@@ -22,6 +22,7 @@ import android.os.Bundle;
 
 import com.cy.translucentparent.StatusNavUtils;
 import com.qmuiteam.qmui.arch.QMUIActivity;
+import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
 
 import androidx.annotation.Nullable;
@@ -35,6 +36,10 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // 在 Application 里初始化
+        // 然后就可以使用 arch 库提供的 QMUIActivity 来作为基础类构建自己的界面了。
+        QMUISwipeBackActivityManager.init(getApplication());
 
 //        StatusNavUtils.setStatusBarColor(this,0x00000000); //状态栏全透明
         StatusNavUtils.setStatusBarColor(this,0x33000000); //状态栏半透明
