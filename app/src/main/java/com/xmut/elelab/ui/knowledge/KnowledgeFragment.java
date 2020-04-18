@@ -22,6 +22,7 @@ import com.qmuiteam.qmui.widget.QMUITopBarLayout;
 import com.qmuiteam.qmui.widget.popup.QMUIPopup;
 import com.qmuiteam.qmui.widget.popup.QMUIPopups;
 import com.qmuiteam.qmui.widget.popup.QMUIQuickAction;
+import com.xmut.elelab.MyTool.data.MyData;
 import com.xmut.elelab.R;
 
 import androidx.fragment.app.Fragment;
@@ -43,7 +44,7 @@ public class KnowledgeFragment extends BackHandledFragment {
     private WebView webView;
     private WebSettings webSettings;
 
-    private String url = "http://blog.liangkaisong.top/";
+    private String url = MyData.blogURL;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -109,7 +110,6 @@ public class KnowledgeFragment extends BackHandledFragment {
             Log.v("Conversatio退出","Conversatio退出");
             return false;
         }
-
     }
 }
 

@@ -2,6 +2,8 @@ package com.xmut.elelab.ui.knowledge;
 
 import android.os.Bundle;
 
+import com.xmut.elelab.MyTool.base.BaseFragment;
+
 import androidx.fragment.app.Fragment;
 
 /**
@@ -11,7 +13,7 @@ import androidx.fragment.app.Fragment;
  * @version 1.0
  * @date 2020/4/16 3:34
  */
-public abstract class BackHandledFragment extends Fragment {
+public abstract class BackHandledFragment extends BaseFragment {
 
     protected BackHandledInterface mBackHandledInterface;
 
