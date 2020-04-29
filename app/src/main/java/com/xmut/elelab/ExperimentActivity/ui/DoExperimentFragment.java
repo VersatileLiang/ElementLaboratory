@@ -108,7 +108,7 @@ public class DoExperimentFragment extends QMUIFragment {
         return root;
     }
 
-    @OnClick({R.id.beaker, R.id.start_element_move, R.id.movable_experimental_equipment_1})
+    @OnClick({R.id.beaker})
     void onClickBeaker(View v) {
         QMUIPopups.quickAction(getContext(),
                 QMUIDisplayHelper.dp2px(getContext(), 56),
@@ -121,6 +121,43 @@ public class DoExperimentFragment extends QMUIFragment {
                             public void onClick(QMUIQuickAction quickAction, QMUIQuickAction.Action action, int position) {
                                 quickAction.dismiss();
                                 Toast.makeText(getContext(), "清空成功", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                ))
+                .addAction(new QMUIQuickAction.Action().icon(R.drawable.icon_quick_action_line).text("标记").onClick(
+                        new QMUIQuickAction.OnClickListener() {
+                            @Override
+                            public void onClick(QMUIQuickAction quickAction, QMUIQuickAction.Action action, int position) {
+                                quickAction.dismiss();
+                                Toast.makeText(getContext(), "标记成功", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                ))
+                .addAction(new QMUIQuickAction.Action().icon(R.drawable.icon_quick_action_share).text("拿起").onClick(
+                        new QMUIQuickAction.OnClickListener() {
+                            @Override
+                            public void onClick(QMUIQuickAction quickAction, QMUIQuickAction.Action action, int position) {
+                                quickAction.dismiss();
+                                Toast.makeText(getContext(), "拿起成功", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                ))
+                .show(v);
+    }
+
+    @OnClick({R.id.start_element_move, R.id.movable_experimental_equipment_1})
+    void onClickTest(View v) {
+        QMUIPopups.quickAction(getContext(),
+                QMUIDisplayHelper.dp2px(getContext(), 56),
+                QMUIDisplayHelper.dp2px(getContext(), 56))
+                .shadow(true)
+                .edgeProtection(QMUIDisplayHelper.dp2px(getContext(), (int)(20* ZoomView.scale)))
+                .addAction(new QMUIQuickAction.Action().icon(R.drawable.icon_quick_action_copy).text("旋转").onClick(
+                        new QMUIQuickAction.OnClickListener() {
+                            @Override
+                            public void onClick(QMUIQuickAction quickAction, QMUIQuickAction.Action action, int position) {
+                                quickAction.dismiss();
+                                Toast.makeText(getContext(), "旋转成功", Toast.LENGTH_SHORT).show();
                             }
                         }
                 ))

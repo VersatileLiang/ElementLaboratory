@@ -3,33 +3,18 @@ package com.xmut.elelab.ui.knowledge;
 import android.net.http.SslError;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
-import com.qmuiteam.qmui.arch.QMUIFragment;
-import com.qmuiteam.qmui.arch.annotation.LatestVisitRecord;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
-import com.qmuiteam.qmui.widget.QMUITopBarLayout;
-import com.qmuiteam.qmui.widget.popup.QMUIPopup;
-import com.qmuiteam.qmui.widget.popup.QMUIPopups;
-import com.qmuiteam.qmui.widget.popup.QMUIQuickAction;
+import com.xmut.elelab.MyTool.base.WebView.BackHandledFragment;
 import com.xmut.elelab.MyTool.data.MyData;
 import com.xmut.elelab.R;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
  * IDEA 2019.1.3

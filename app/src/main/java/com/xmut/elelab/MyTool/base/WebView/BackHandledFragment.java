@@ -1,10 +1,8 @@
-package com.xmut.elelab.ui.knowledge;
+package com.xmut.elelab.MyTool.base.WebView;
 
 import android.os.Bundle;
 
 import com.xmut.elelab.MyTool.base.BaseFragment;
-
-import androidx.fragment.app.Fragment;
 
 /**
  * IDEA 2019.1.3

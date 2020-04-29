@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
         });
         netImg = root.findViewById(R.id.home_img);
         Glide.with(root)
-                .load("http://liangkaisong.top/i/1/qj8860735275.jpg")
+                .load("https://blog.liangkaisong.top/wp-content/uploads/2020/04/1.jpg")
                 .into(netImg);
 
         experimentButton = root.findViewById(R.id.experiment_button);

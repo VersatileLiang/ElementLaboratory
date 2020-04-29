@@ -14,7 +14,7 @@ import android.webkit.WebViewClient;
 
 import com.xmut.elelab.MyTool.data.MyData;
 import com.xmut.elelab.R;
-import com.xmut.elelab.ui.knowledge.BackHandledFragment;
+import com.xmut.elelab.MyTool.base.WebView.BackHandledFragment;
 
 public class RecordFragment extends BackHandledFragment {
 
@@ -75,14 +75,13 @@ public class RecordFragment extends BackHandledFragment {
             //  Toast.makeText(this,"网页加载错误！",0).show();
         }
     }
+
     @Override
     public  boolean onBackPressed(){
-
         if(webView.canGoBack()){
             webView.goBack();
             Log.v("webView.goBack()", "webView.goBack()");
             return true;
-
         }else{
             Log.v("Conversatio退出","Conversatio退出");
             return false;

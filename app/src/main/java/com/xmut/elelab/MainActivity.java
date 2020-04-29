@@ -1,6 +1,5 @@
 package com.xmut.elelab;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -24,22 +23,19 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
-import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
 import com.xmut.elelab.MyTool.MyImage.ImageUtils;
 import com.xmut.elelab.MyTool.base.BaseActivity;
-import com.xmut.elelab.ui.knowledge.BackHandledFragment;
-import com.xmut.elelab.ui.knowledge.BackHandledInterface;
+import com.xmut.elelab.MyTool.base.WebView.BackHandledFragment;
+import com.xmut.elelab.MyTool.base.WebView.BackHandledInterface;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 

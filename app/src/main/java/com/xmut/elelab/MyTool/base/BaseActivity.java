@@ -21,14 +21,21 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.cy.translucentparent.StatusNavUtils;
-import com.qmuiteam.qmui.arch.QMUIActivity;
 import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import static com.xmut.elelab.MyTool.AppContext.AppContext.getContext;
+/**
+ * IDEA 2019.1.3
+ * 基础配置的 Activity
+ * 目前配置的有：
+ * 状态栏半透明
+ * 导航栏半透明
+ * @author kaisong liang
+ * @version 1.0
+ * @date 2020/4/16 16:58
+ */
 
 @SuppressLint("Registered")
 public class BaseActivity extends AppCompatActivity {

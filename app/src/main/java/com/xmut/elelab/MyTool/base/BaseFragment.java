@@ -13,7 +13,10 @@ import androidx.fragment.app.Fragment;
 
 /**
  * IDEA 2019.1.3
- *
+ * 基础配置的Fragment
+ * 目前配置的有：
+ * 状态栏半透明
+ * 导航栏半透明
  * @author kaisong liang
  * @version 1.0
  * @date 2020/4/19 1:28
