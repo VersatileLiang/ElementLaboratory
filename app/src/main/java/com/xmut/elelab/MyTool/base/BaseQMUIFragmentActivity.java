@@ -42,7 +42,7 @@ import androidx.annotation.Nullable;
  * Created by cgspine on 2018/1/7.
  */
 
-public abstract class BaseFragmentActivity extends QMUIFragmentActivity {
+public abstract class BaseQMUIFragmentActivity extends QMUIFragmentActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {

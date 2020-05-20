@@ -5,4 +5,15 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="exp_size">17dp</dimen>
+    <dimen name="padding_top">8dp</dimen>
+    <dimen name="nan_size">23dp</dimen>
+
+    <dimen name="image_height">180dp</dimen>
+
+    <dimen name="exp_height">150dp</dimen>
+    <dimen name="exp_l_height">120dp</dimen>
+    <dimen name="text_height">30dp</dimen>
+    <dimen name="exp_wight">95dp</dimen>
 </resources>

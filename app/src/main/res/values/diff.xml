@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="diff">
+            <item >选择难度</item>
+            <item >简单</item>
+            <item >普通</item>
+            <item >困难</item>
+            <item >噩梦</item>
+            <item >难到放弃</item>
+        </string-array>
+</resources>

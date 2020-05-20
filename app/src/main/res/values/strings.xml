@@ -30,12 +30,43 @@
     <!-- 首页fragment -->
     <string name="rotation_chart">轮播图</string>
     <string name="my_lab">我的实验</string>
+    <string name="recommended_experiments">推荐实验</string>
+    <string name="classification">分类：基础实验</string>
+    <string name="basic_experiment">基础实验</string>
+    <string name="recommend">推荐Top1</string>
+
+    <string name="exp_1">实验1：配制一定物质的量浓度的溶液</string>
+    <string name="exp_2">实验2：Fe(OH)3胶体的制备</string>
+    <string name="exp_3">实验3：焰色反应</string>
+    <string name="exp_4">实验4：Fe(OH)2的制备</string>
+    <string name="exp_5">实验5：二价铁、三价铁的检验</string>
+    <string name="exp_6">实验6：硅酸的制备</string>
+    <string name="exp_7">实验7：重要离子的检验</string>
+    <string name="exp_8">实验8：氯气的实验室制法</string>
+    <string name="exp_9">实验9：氨气的实验室制法</string>
+    <string name="exp_10">实验10：喷泉实验</string>
+    <string name="exp_11">实验11：铜与浓硫酸反应的实验</string>
+    <string name="exp_12">实验12：铝热反应</string>
 
     <!-- 选择实验 -->
     <string name="selection_experiment">选择实验</string>
 
+    <!-- 实验详情 -->
+    <string name="selection_experimental_equipment">选择实验器材</string>
+    <string name="test_tube">试管</string>
+    <string name="beaker">烧杯</string>
+    <string name="volumetric_flask">容量瓶</string>
+    <string name="lll">噼里啪啦</string>
+    <string name="click_add">点击添加</string>
+    <string name="selection_experimental_reagents">选择实验试剂</string>
+    <string name="NaCl">NaCl</string>
+    <string name="NaOH">NaOH</string>
+    <string name="H2SO4">浓硫酸</string>
+    <string name="selection_difficulty">选择难度</string>
+    <string name="start_experiment">开始实验</string>
+
     <!-- 做实验的主界面 -->
-    <string name="experiment_score">实验分数</string>
+    <string name="experiment_score">实验分数：65</string>
     <string name="laboratory_apparatus">实验器材</string>
-    <string name="experiment_time">实验时间</string>
+    <string name="experiment_time">实验时间 07:21 </string>
 </resources>

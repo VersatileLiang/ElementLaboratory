@@ -1,18 +1,14 @@
 package com.xmut.elelab.ExperimentActivity;
 
-import android.content.pm.ActivityInfo;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
 
-import com.qmuiteam.qmui.arch.QMUIFragmentActivity;
 import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
 import com.qmuiteam.qmui.arch.annotation.DefaultFirstFragment;
 import com.qmuiteam.qmui.arch.annotation.FirstFragments;
 import com.qmuiteam.qmui.arch.annotation.LatestVisitRecord;
 import com.xmut.elelab.ExperimentActivity.ui.DoExperimentFragment;
-import com.xmut.elelab.MyTool.base.BaseFragmentActivity;
+import com.xmut.elelab.MyTool.base.BaseQMUIFragmentActivity;
 import com.xmut.elelab.R;
 
 /**
@@ -26,7 +22,7 @@ import com.xmut.elelab.R;
         })
 @DefaultFirstFragment(DoExperimentFragment.class)
 @LatestVisitRecord
-public class DoExperimentActivity extends BaseFragmentActivity {
+public class DoExperimentActivity extends BaseQMUIFragmentActivity {
 
     @Override
     protected int getContextViewId() {

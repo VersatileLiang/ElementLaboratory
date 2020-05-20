@@ -26,23 +26,27 @@ import com.qmuiteam.qmui.widget.popup.QMUIQuickAction;
 import com.xmut.elelab.MyTool.AppContext.AppContext;
 import com.xmut.elelab.MyTool.MyView.ZoomView;
 import com.xmut.elelab.MyTool.SystemUtil.SystemUtil;
+import com.xmut.elelab.MyTool.base.BaseQMUIFragment;
+import com.xmut.elelab.MyTool.base.Time.TimeRunTextView;
 import com.xmut.elelab.R;
 
 import java.lang.reflect.Method;
 
 import androidx.annotation.RequiresApi;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class DoExperimentFragment extends QMUIFragment {
+public class DoExperimentFragment extends BaseQMUIFragment {
 
-
+    @BindView(R.id.time)
+    TimeRunTextView time;
     @Override
     protected View onCreateView() {
         View root = LayoutInflater.from(getActivity()).inflate(R.layout.do_experiment_fragment, null);
         ButterKnife.bind(this, root);
-
+        time.startTime(900,"2");
 //        getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 //        getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 //        getActivity().getWindow().addFlags(WindowManager.LayoutParams.SOFT_INPUT_IS_FORWARD_NAVIGATION);

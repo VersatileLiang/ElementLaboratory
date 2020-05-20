@@ -8,7 +8,7 @@ package com.xmut.elelab.MyTool.data;
  * @date 2020/4/19 1:40
  */
 public class MyData {
-    public static final String http = "https://";
+    public static final String http = "http://";
     public static final String blog = "blog";
     public static final String domainName = "liangkaisong.top";
     public static final String URL = http + domainName;

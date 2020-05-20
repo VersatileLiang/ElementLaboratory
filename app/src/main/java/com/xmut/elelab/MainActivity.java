@@ -41,7 +41,7 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
-import static com.xmut.elelab.MyTool.base.BaseFragmentActivity.getNavigationBarFinalHeight;
+import static com.xmut.elelab.MyTool.base.BaseQMUIFragmentActivity.getNavigationBarFinalHeight;
 
 public class MainActivity extends BaseActivity implements BackHandledInterface {
 
