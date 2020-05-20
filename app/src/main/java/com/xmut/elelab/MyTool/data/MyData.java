@@ -10,7 +10,7 @@ package com.xmut.elelab.MyTool.data;
 public class MyData {
     public static final String http = "http://";
     public static final String blog = "blog";
-    public static final String domainName = "liangkaisong.top";
+    public static final String domainName = "lks17.com";
     public static final String URL = http + domainName;
     public static final String blogURL = http + blog + "." + domainName;
 }
