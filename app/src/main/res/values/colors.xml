@@ -6,7 +6,9 @@
     <color name="mainColor">#2e53e6</color>
     <color name="mainDarkColor">#e00f2374</color>
     <color name="text_black">#FFFFFF</color>
+    <color name="black">#000000</color>
     <color name="text_bg">#000000</color>
+    <color name="text_bgt">#00000000</color>
 
     <!-- common -->
     <color name="app_color_blue">#00A8E1</color>
@@ -22,9 +24,11 @@
     <color name="app_color_blue_3_pressed">#7FEBF9FF</color>
 
     <color name="app_color_theme_1">#EF5362</color> <!-- Grapefruit -->
+    <color name="app_color_theme_11">#E3192C</color> <!-- Grapefruit -->
     <color name="app_color_theme_2">#FE6D4B</color> <!-- Bittersweet -->
     <color name="app_color_theme_3">#FFCF47</color> <!-- Sunflower -->
     <color name="app_color_theme_4">#9FD661</color> <!-- Grass -->
+    <color name="app_color_theme_41">#57DA1E</color> <!-- Grass -->
     <color name="app_color_theme_5">#3FD0AD</color> <!-- Mint -->
     <color name="app_color_theme_6">#2BBDF3</color> <!-- Aqua -->
     <color name="app_color_theme_7">#5A9AEF</color> <!-- Blue Jeans -->

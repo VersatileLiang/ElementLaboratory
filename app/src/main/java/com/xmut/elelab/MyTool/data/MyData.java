@@ -13,4 +13,5 @@ public class MyData {
     public static final String domainName = "lks17.com";
     public static final String URL = http + domainName;
     public static final String blogURL = http + blog + "." + domainName;
+    public static int experimentalScore = 60;
 }

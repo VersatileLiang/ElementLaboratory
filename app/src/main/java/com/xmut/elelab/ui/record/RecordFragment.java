@@ -21,7 +21,7 @@ public class RecordFragment extends BackHandledFragment {
     private WebView webView;
     private WebSettings webSettings;
 
-    private String url = MyData.blogURL + "/wp-admin/edit.php";
+    private String url = MyData.blogURL + "/wp-admin/edit.php?post_type=post";
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 

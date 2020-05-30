@@ -222,14 +222,14 @@
                                     <LinearLayout
                                         android:layout_width="@dimen/exp_wight"
                                         android:layout_height="@dimen/exp_l_height"
-                                        android:background="@drawable/radial_green"
+                                        android:background="@drawable/radial_blue"
                                         tools:ignore="TooDeepLayout">
                                         <ImageView
                                             android:layout_gravity="center"
                                             android:layout_width="@dimen/exp_wight"
                                             android:layout_height="@dimen/exp_l_height"
                                             android:padding="@dimen/exp_size"
-                                            android:src="@mipmap/beaker"
+                                            android:src="@mipmap/reagent_bottle"
                                             tools:ignore="ContentDescription">
                                         </ImageView>
                                     </LinearLayout>
@@ -249,12 +249,141 @@
                                         </TextView>
                                     </LinearLayout>
                                 </LinearLayout>
+
                                 <LinearLayout
                                     android:layout_width="4dp"
                                     android:layout_height="match_parent"
                                     android:background="#B3B0B0">
                                 </LinearLayout>
                                 <LinearLayout
+                                    android:layout_width="@dimen/exp_wight"
+                                    android:layout_height="@dimen/exp_height"
+                                    android:layout_margin="3dp"
+                                    android:orientation="vertical"
+                                    tools:ignore="PrivateResource">
+                                    <LinearLayout
+                                        android:layout_width="@dimen/exp_wight"
+                                        android:layout_height="@dimen/exp_l_height"
+                                        android:background="@drawable/radial_green"
+                                        tools:ignore="TooDeepLayout">
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:layout_width="@dimen/exp_wight"
+                                            android:layout_height="@dimen/exp_l_height"
+                                            android:padding="@dimen/exp_size"
+                                            android:src="@mipmap/graduated_cylinder"
+                                            tools:ignore="ContentDescription">
+                                        </ImageView>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="@color/qmui_config_color_gray_9"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:textSize="15dp"
+                                            android:text="量筒">
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#B3B0B0">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="@dimen/exp_wight"
+                                    android:layout_height="@dimen/exp_height"
+                                    android:layout_margin="3dp"
+                                    android:orientation="vertical"
+                                    tools:ignore="PrivateResource">
+                                    <LinearLayout
+                                        android:layout_width="@dimen/exp_wight"
+                                        android:layout_height="@dimen/exp_l_height"
+                                        android:background="@drawable/radial_purple"
+                                        tools:ignore="TooDeepLayout">
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:layout_width="@dimen/exp_wight"
+                                            android:layout_height="@dimen/exp_l_height"
+                                            android:padding="@dimen/exp_size"
+                                            android:src="@mipmap/iron_stand"
+                                            tools:ignore="ContentDescription">
+                                        </ImageView>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="@color/qmui_config_color_gray_9"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:textSize="15dp"
+                                            android:text="铁架台">
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#B3B0B0">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="@dimen/exp_wight"
+                                    android:layout_height="@dimen/exp_height"
+                                    android:layout_margin="3dp"
+                                    android:orientation="vertical"
+                                    tools:ignore="PrivateResource">
+                                    <LinearLayout
+                                        android:layout_width="@dimen/exp_wight"
+                                        android:layout_height="@dimen/exp_l_height"
+                                        android:background="@drawable/radial_green"
+                                        tools:ignore="TooDeepLayout">
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:layout_width="@dimen/exp_wight"
+                                            android:layout_height="@dimen/exp_l_height"
+                                            android:padding="@dimen/exp_size"
+                                            android:src="@mipmap/tripod"
+                                            tools:ignore="ContentDescription">
+                                        </ImageView>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="@color/qmui_config_color_gray_9"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:textSize="15dp"
+                                            android:text="三脚架">
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#B3B0B0">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/add_qc"
                                     android:layout_width="@dimen/exp_wight"
                                     android:layout_height="@dimen/exp_height"
                                     android:layout_margin="3dp"

@@ -65,27 +65,33 @@ public class MyOvButton extends MyRelativeButton {
             case MotionEvent.ACTION_MOVE:
                 if (moveType == 1) {
                     isDrag = (parentHeight > 0 && parentWidth > 0);//只有父布局存在你才可以拖动
-                    if(!isDrag) break;
+                    if(!isDrag){ //父布局不存在
+                        break;
+                    }else {
+                        int dx=rawX-lastX;
+                        dx/=ZoomView.scale;
+                        int dy=rawY-lastY;
+                        dy/=ZoomView.scale;
+                        //这里修复一些华为手机无法触发点击事件
+                        int distance= (int) Math.sqrt(dx*dx+dy*dy);
+                        isDrag = distance>0;//只有位移大于0说明拖动了
+                        if(!isDrag){ //位移小于0
+                            break;
+                        }else { //确定是拖动
+                            float x=getX()+dx;
+                            float y=getY()+dy;
+                            //检测是否到达边缘 左上右下。边缘检测
+                            //修正边缘
+                            x=x<0?0:x>parentWidth-getWidth()?parentWidth-getWidth():x;
+                            y=y<0?0:y>parentHeight-getHeight()?parentHeight-getHeight():y;
+                            setX(x);
+                            setY(y);
+                            lastX=rawX;
+                            lastY=rawY;
 
-                    int dx=rawX-lastX;
-                    dx/=ZoomView.scale;
-                    int dy=rawY-lastY;
-                    dy/=ZoomView.scale;
-                    //这里修复一些华为手机无法触发点击事件
-                    int distance= (int) Math.sqrt(dx*dx+dy*dy);
-                    isDrag = distance>0;//只有位移大于0说明拖动了
-                    if(!isDrag) break;
-
-                    float x=getX()+dx;
-                    float y=getY()+dy;
-                    //检测是否到达边缘 左上右下
-                    x=x<0?0:x>parentWidth-getWidth()?parentWidth-getWidth():x;
-                    y=y<0?0:y>parentHeight-getHeight()?parentHeight-getHeight():y;
-                    setX(x);
-                    setY(y);
-                    lastX=rawX;
-                    lastY=rawY;
-                    time = System.currentTimeMillis();
+                            time = System.currentTimeMillis();
+                        }
+                    }
                     break;
                 } else if (moveType == 2) {
                     rotation = rotation + getDegree(event) - degree;
@@ -100,8 +106,8 @@ public class MyOvButton extends MyRelativeButton {
                 }
             case MotionEvent.ACTION_UP:
                 //移动后会发生小概率的误触点击事件，影响操作
-                //移动后点击误触的判断，小于200毫秒的全部判断为误触
-                if (System.currentTimeMillis() - time < 200){
+                //移动后点击误触的判断，小于500毫秒的全部判断为误触
+                if (System.currentTimeMillis() - time < 500){
                     setPressed(false);
                 }else {
                     setPressed(!isDrag);

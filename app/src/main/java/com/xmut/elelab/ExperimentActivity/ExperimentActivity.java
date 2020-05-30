@@ -42,43 +42,13 @@ public class ExperimentActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
-    }
 
-
-    @OnClick({R.id.experiment_1})
-    void onClickexperiment_1(View v) {
-        QMUIPopups.quickAction(getContext(),
-                QMUIDisplayHelper.dp2px(getContext(), 56),
-                QMUIDisplayHelper.dp2px(getContext(), 56))
-                .shadow(true)
-                .edgeProtection(QMUIDisplayHelper.dp2px(getContext(), (int)(20* ZoomView.scale)))
-                .addAction(new QMUIQuickAction.Action().icon(R.drawable.icon_quick_action_copy).text("清空").onClick(
-                        new QMUIQuickAction.OnClickListener() {
-                            @Override
-                            public void onClick(QMUIQuickAction quickAction, QMUIQuickAction.Action action, int position) {
-                                quickAction.dismiss();
-                                Toast.makeText(getContext(), "清空成功", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                ))
-                .addAction(new QMUIQuickAction.Action().icon(R.drawable.icon_quick_action_line).text("标记").onClick(
-                        new QMUIQuickAction.OnClickListener() {
-                            @Override
-                            public void onClick(QMUIQuickAction quickAction, QMUIQuickAction.Action action, int position) {
-                                quickAction.dismiss();
-                                Toast.makeText(getContext(), "标记成功", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                ))
-                .addAction(new QMUIQuickAction.Action().icon(R.drawable.icon_quick_action_share).text("拿起").onClick(
-                        new QMUIQuickAction.OnClickListener() {
-                            @Override
-                            public void onClick(QMUIQuickAction quickAction, QMUIQuickAction.Action action, int position) {
-                                quickAction.dismiss();
-                                Toast.makeText(getContext(), "拿起成功", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                ))
-                .show(v);
+        LinearLayout linearLayout = findViewById(R.id.add_qc);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "预设实验无法修改", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

@@ -13,18 +13,18 @@
     <string name="action_settings">设置</string>
 
     <!-- 左侧抽屉菜单栏 -->
-    <string name="menu_home">我的</string>
-    <string name="menu_gallery">登录</string>
-    <string name="menu_slideshow">注册</string>
-    <string name="menu_tools">工具</string>
-    <string name="communicate">社交</string>
-    <string name="menu_share">分享</string>
-    <string name="menu_send">发送</string>
+    <string name="menu_home">我的信息</string>
+    <string name="menu_gallery">评论</string>
+    <string name="menu_slideshow">媒体</string>
+    <string name="menu_tools">用户</string>
+    <string name="communicate">设置</string>
+    <string name="menu_share">个人设置</string>
+    <string name="menu_send">系统设置</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">用户名</string>
-    <string name="nav_header_subtitle">用户签名，个性签名介绍自己</string>
+    <string name="nav_header_title">松哥</string>
+    <string name="nav_header_subtitle">一个热爱自由的少年</string>
     <string name="nav_header_desc">Navigation header</string>
 
     <!-- 首页fragment -->
@@ -55,8 +55,8 @@
     <string name="selection_experimental_equipment">选择实验器材</string>
     <string name="test_tube">试管</string>
     <string name="beaker">烧杯</string>
-    <string name="volumetric_flask">容量瓶</string>
-    <string name="lll">噼里啪啦</string>
+    <string name="volumetric_flask">100ml 容量瓶</string>
+    <string name="lll">100ml 试剂瓶</string>
     <string name="click_add">点击添加</string>
     <string name="selection_experimental_reagents">选择实验试剂</string>
     <string name="NaCl">NaCl</string>
@@ -66,7 +66,17 @@
     <string name="start_experiment">开始实验</string>
 
     <!-- 做实验的主界面 -->
-    <string name="experiment_score">实验分数：65</string>
+    <string name="experiment_score">实验分数：60</string>
     <string name="laboratory_apparatus">实验器材</string>
     <string name="experiment_time">实验时间 07:21 </string>
+    <string name="title_activity_settlement">SettlementActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- 做实验结束的界面 -->
+    <string name="experimental_settlement">实验结算</string>
+
 </resources>

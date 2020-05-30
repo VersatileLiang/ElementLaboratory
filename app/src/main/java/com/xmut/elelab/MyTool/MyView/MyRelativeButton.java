@@ -99,7 +99,7 @@ public class MyRelativeButton extends RelativeLayout {
                 time = System.currentTimeMillis();
                 break;
             case MotionEvent.ACTION_UP:
-                if (System.currentTimeMillis() - time < 200){
+                if (System.currentTimeMillis() - time < 500){
                     setPressed(false);
                 }else {
                     setPressed(!isDrag);

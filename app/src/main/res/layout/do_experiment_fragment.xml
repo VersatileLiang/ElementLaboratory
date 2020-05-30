@@ -20,8 +20,109 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="bottom">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/iron_stand"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/tripod"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
             <com.xmut.elelab.MyTool.MyView.MyOvButton
-                android:id="@+id/start_element_move"
+                android:id="@+id/move3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/volumetric"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyOvButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/graduated_cylinder"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyOvButton
+                android:id="@+id/move4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/reagent_bottle"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyOvButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyOvButton
+                android:id="@+id/move2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/beaker"
+                android:dither="true">
+            </com.xmut.elelab.MyTool.MyView.MyOvButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+                </TextView>
+            </LinearLayout>
+            <com.xmut.elelab.MyTool.MyView.MyOvButton
+                android:id="@+id/move1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -36,92 +137,9 @@
                     android:layout_height="20dp">
                 </TextView>
             </LinearLayout>
-            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
-                android:id="@+id/movable_experimental_equipment_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="@mipmap/beaker"
-                android:dither="true">
-            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp">
-                </TextView>
-            </LinearLayout>
-            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
-                android:id="@+id/beaker"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="@mipmap/volumetric"
-                android:dither="true">
-            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp">
-                </TextView>
-            </LinearLayout>
-            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="@mipmap/beaker"
-                android:dither="true">
-            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp">
-                </TextView>
-            </LinearLayout>
-            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="@mipmap/beaker"
-                android:dither="true">
-            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp">
-                </TextView>
-            </LinearLayout>
-            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="@mipmap/beaker"
-                android:dither="true">
-            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp">
-                </TextView>
-            </LinearLayout>
-            <com.xmut.elelab.MyTool.MyView.MyRelativeButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="@mipmap/beaker"
-                android:dither="true">
-            </com.xmut.elelab.MyTool.MyView.MyRelativeButton>
         </LinearLayout>
     </com.xmut.elelab.MyTool.MyView.ZoomView>
+
 
     <LinearLayout
         android:id="@+id/linear_main"
@@ -132,9 +150,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
+                android:id="@+id/experimental_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:textSize="20dp"
                 android:textColor="@color/text_black"
                 android:shadowColor="@color/text_bg"
@@ -144,16 +163,31 @@
                 android:text="@string/experiment_score">
             </TextView>
             <TextView
+                android:id="@+id/score_variety"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="5"
                 android:textSize="20dp"
                 android:textColor="@color/text_black"
                 android:shadowColor="@color/text_bg"
                 android:shadowRadius="1"
                 android:shadowDx="1"
                 android:shadowDy="1"
-                android:text="@string/app_name">
+                android:visibility="invisible"
+                android:text="0">
+            </TextView>
+            <TextView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:textSize="20dp"
+                android:textColor="@color/text_black"
+                android:shadowColor="@color/text_bg"
+                android:shadowRadius="1"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:text="菜单">
             </TextView>
             <com.xmut.elelab.MyTool.base.Time.TimeRunTextView
                 android:id="@+id/time"
@@ -180,10 +214,12 @@
                 android:background="@mipmap/experiment_equipment">
             </Button>
             <Button
-                android:id="@+id/experiment_equipment1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/yaoji">
+                android:id="@+id/tips"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_tip">
             </Button>
         </LinearLayout>
 
